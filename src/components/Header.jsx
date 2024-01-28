@@ -8,7 +8,7 @@ const Header = () => {
     useEffect(() => {
       const handleScroll = () => {
         const scrollPosition = window.scrollY;
-        const scrollThreshold = 50;
+        const scrollThreshold = 100;
   
         setIsScrolled(scrollPosition > scrollThreshold);
       };
@@ -28,13 +28,13 @@ const Header = () => {
           </Link>
           <div className="pages flex gap-[5.7rem] text-base text-[0.75rem]">
             <NavLink to="/" className="hover:text-second" activeClassName="text-second font-bold">Home</NavLink>
-            <NavLink to="/en/about-us" className="hover:text-second" activeClassName="text-second">About Us</NavLink>
+            <NavLink to="/en/about" className="hover:text-second" activeClassName="text-second">About Us</NavLink>
             <NavLink to="/en/service" className="hover:text-second" activeClassName="text-second">Services</NavLink>
             <NavLink to="/en/contact" className="hover:text-second" activeClassName="text-second">Contact</NavLink>
             <div className="lang flex gap-1">
-              <div className="en">EN</div>
+              <div className="en cursor-pointer hover:text-second">EN</div>
               |
-              <div className="id">ID</div>
+              <div className="id cursor-pointer hover:text-second">ID</div>
             </div>
           </div>
         </nav>
