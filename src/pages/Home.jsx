@@ -33,8 +33,8 @@ function Home() {
                 <div className="flex mt-[10rem]">
                     <p className="text-second w-1/2">SERVICES</p>
                     <article className="flex w-1/2">
-                        <h2 className="text-white text-justify text-5xl">Our service </h2>
-                        <h2 className="text-second text-5xl ms-2 font-bold">business</h2>
+                        <h2 className="text-white text-justify text-5xl">Our service <b className="text-second">business</b></h2>
+                        {/* <h2 className="text-second text-5xl ms-2 font-bold">business</h2> */}
                     </article>
                 </div>
                 <h2 className="text-white text-5xl"><b className="text-second">capabilities</b> with an <b className="text-second">effecient operational</b> and <b className="text-second">adaptable solutions</b></h2>
