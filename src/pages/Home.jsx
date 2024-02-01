@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import getImageUrl from "../utils/imageGetter";
-import Header from "../components/header";
-import Footer from "../components/footer";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 function Home() {
 
