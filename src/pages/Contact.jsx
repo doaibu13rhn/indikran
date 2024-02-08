@@ -9,7 +9,7 @@ function Contact() {
     <>
       <Header />
       <section>
-        <div className="mx-8">
+        <div className="mx-8 md:mx-20">
           <div className="flex items-end min-h-[35vh]">
             <article className="flex items-start">
               <p className="text-4xl me-4">CONTACT</p>
@@ -24,7 +24,7 @@ function Contact() {
 
         <div className="border-b-2 border-second border-dashed mt-14"></div>
 
-        <div className="mx-8">
+        <div className="mx-8 md:mx-20">
           <div className="pt-8">
             <article className="">
               <p className="text-second mb-8 font-bold">Locations</p>
