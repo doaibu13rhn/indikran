@@ -16,33 +16,50 @@ function Footer() {
               <p className="text-third text-[0.6rem] font-thin">Back to top</p>
             </a>
           </div>
+
           <div className="w-full pt-10 flex">
-            <div className="w-1/2">
+            <div className="w-4/5">
               <img
                 src={getImageUrl("logo-white", "webp")}
                 alt="logo-indikran"
                 className="w-[18vw]"
               />
             </div>
-            <div className="w-1/2">
-              <div className="services text-white">
-                <p>service</p>
-                <article className="font-thin text-third pt-5">
-                  <p>Refurbishment</p>
-                  <p>Testing</p>
-                  <p>Manpower</p>
-                  <p>Sales</p>
+            <div className="w-2/5 flex">
+              <div className="w-full flex-col">
+                <p className=" text-white">service</p>
+                <article className="font-thin text-third text-[0.7rem] pt-5">
+                  <p className="">Refurbishment</p>
+                  <p className="mt-2">Testing</p>
+                  <p className="mt-2">Manpower</p>
+                  <p className="mt-2">Sales</p>
                 </article>
               </div>
-              <div className="locations">
-                <p>Locations</p>
-                <p>
+              <div className="">
+                <p className=" text-white">Locations</p>
+                <p className="text-third text-[0.7rem] pt-5">
                   Jalan Mulawarman No.227, Sepinggan, Kecamatan Balikpapan
                   Selatan, Kota Balikpapan, Kalimantan Timur 76114
                 </p>
-                <p></p>
+                <div className="flex items-center pt-5">
+                  <p className="text-white underline">Open in Maps</p>
+                  <img
+                    src={getImageUrl("arrow", "webp")}
+                    alt="arrow"
+                    className="w-6 ms-2"
+                  />
+                </div>
               </div>
             </div>
+          </div>
+
+          <div className="flex justify-between pt-16 pb-5">
+            <p className="text-[0.6rem] text-white font-thin">
+              ©2023 PT. Indikran Hydrauliks
+            </p>
+            <p className="text-[0.6rem] text-white font-thin">
+              All trademarks are property of their respective owners
+            </p>
           </div>
         </div>
       </footer>
