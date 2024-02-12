@@ -69,7 +69,7 @@ function About() {
 
         <iframe
           className="w-full h-[90vh]"
-          src="https://www.youtube.com/embed/5cy3vDjTfFY?si=UH2YuLuNJf9QeUBA"
+          src="https://www.youtube.com/embed/CFGijmZZYHA?si=sADWQzIJdkoyn6TO"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

@@ -9,7 +9,7 @@ function Home() {
     <>
       <Header />
       <main>
-        <section className="bg-[url('/src/assets/images/main-section.webp')] bg-cover bg-center bg-no-repeat w-full">
+        <section className="bg-[url('/src/assets/images/main-section-mobile.webp')] md:bg-[url('/src/assets/images/main-section.webp')] bg-cover bg-center bg-no-repeat w-full">
           <div className="flex mx-20 min-h-[100vh] text-white items-end">
             <article className="w-full h-[25vh] mb-1">
               <p className="text-[4rem] leading-none flex-1 justify-center">
