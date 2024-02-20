@@ -10,23 +10,28 @@ function Home() {
       <Header />
       <main>
         <section className="bg-[url('/src/assets/images/main-section-mobile.webp')] md:bg-[url('/src/assets/images/main-section.webp')] bg-cover bg-center bg-no-repeat w-full">
-          <div className="flex mx-20 min-h-[100vh] text-white items-end">
+          <div className="flex mx-8 md:mx-20 min-h-[100vh] text-white items-end">
             <article className="w-full h-[25vh] mb-1">
-              <p className="text-[4rem] leading-none flex-1 justify-center">
+              <p className="text-[4rem] leading-none flex-1 justify-center hidden md:block">
                 <b>An effecient approach</b>
                 <br />
                 specializing in <b>heavy machinery</b>
+              </p>
+              <p className="text-white block md:hidden font-thin text-[1.8rem]">
+                <b className="font-bold">An efficient</b> <br />
+                <b className="font-bold">approach</b> Specializing <br /> in
+                <b className="font-bold"> heavy machinery</b>
               </p>
             </article>
           </div>
         </section>
 
-        <section className="bg-[url('/src/assets/images/cover-blue-2.webp')] bg-cover bg-center bg-no-repeat w-full py-20">
-          <div className="mx-20 h-auto min-h-screen">
-            <div className="flex">
-              <p className="text-second w-1/2">ABOUT US</p>
-              <article className="flex flex-col w-1/2 h-[30vh]">
-                <p className="text-white text-justify text-xl">
+        <section className="bg-[url('/src/assets/images/cover-blue-mobile.webp')] md:bg-[url('/src/assets/images/cover-blue-2.webp')] bg-cover bg-center bg-no-repeat w-full md:py-20 py-10">
+          <div className="mx-8 md:mx-20 h-auto min-h-screen">
+            <div className="md:flex">
+              <p className="text-second md:w-1/2 w-full">ABOUT US</p>
+              <article className="md:w-1/2 w-full h-[30vh] mt-16 md:mt-0">
+                <p className="text-white text-justify text-xl font-extralight">
                   Indikran is a service company that was established in the
                   early 2000s. It is an authorised legal entity that engages in
                   the sales, refurbishment and testing of electrical products.
@@ -42,22 +47,85 @@ function Home() {
               </article>
             </div>
 
-            <div className="flex mt-[10rem]">
+            <div className="md:flex md:mt-[10rem] mt-[10rem]">
               <p className="text-second w-1/2">SERVICES</p>
+              {/* mobile */}
+              <article className="md:hidden block mt-14 text-[1.2rem]">
+                <p className="text-white font-extralight">
+                  Our service
+                  <b className="text-second font-bold">
+                    {" "}
+                    business capabilities
+                  </b>
+                </p>
+                <p className="text-white font-extralight">
+                  with an
+                  <b className="text-second font-bold">
+                    {" "}
+                    effecient operational
+                  </b>
+                </p>
+                <p className="text-white font-extralight">
+                  and
+                  <b className="text-second font-bold"> adaptable solutions</b>
+                </p>
+              </article>
+              {/* dekstop */}
               <article className="flex w-1/2">
-                <h2 className="text-white text-justify text-5xl">
+                <h2 className="text-white text-justify text-5xl md:block hidden">
                   Our service <b className="text-second">business</b>
                 </h2>
                 {/* <h2 className="text-second text-5xl ms-2 font-bold">business</h2> */}
               </article>
             </div>
-            <h2 className="text-white text-5xl">
+            <h2 className="text-white text-5xl md:block hidden">
               <b className="text-second">capabilities</b> with an{" "}
               <b className="text-second">effecient operational</b> and{" "}
               <b className="text-second">adaptable solutions</b>
             </h2>
 
-            <div className="flex text-white mt-14 gap-5">
+            {/* Mobile */}
+            <div className="carousel mt-14 md:hidden carousel-center p-4 space-x-4 bg-transpatent rounded-box">
+              <div className="carousel-item">
+                <img
+                  src={getImageUrl("refurbishment-mob", "webp")}
+                  className=""
+                />
+              </div>
+              <div className="carousel-item">
+                <img
+                  src={getImageUrl("refurbishment-mob", "webp")}
+                  className=""
+                />
+              </div>
+              <div className="carousel-item">
+                <img
+                  src={getImageUrl("refurbishment-mob", "webp")}
+                  className=""
+                />
+              </div>
+              <div className="carousel-item">
+                <img
+                  src={getImageUrl("refurbishment-mob", "webp")}
+                  className=""
+                />
+              </div>
+            </div>
+
+            <Link
+              className="flex mt-12 items-center md:hidden text-white font-extralight mb-10"
+              to="/en/about"
+            >
+              <p className="underline">Learn More</p>
+              <img
+                src={getImageUrl("arrow", "webp")}
+                alt="arrow"
+                className="max-w-full max-h-full ms-4"
+              />
+            </Link>
+
+            {/* Dekstop */}
+            <div className="md:flex text-white mt-14 gap-5 hidden">
               <div className="w-1/2"></div>
               <div className="w-1/2">
                 <div className="flex w-full gap-5">
@@ -83,7 +151,7 @@ function Home() {
               </div>
             </div>
 
-            <div className="flex gap-5">
+            <div className="hidden md:flex gap-5">
               <div className="w-1/2">
                 <div className="flex w-full gap-5">
                   <div className="w-1/2 text-white"></div>
@@ -123,19 +191,27 @@ function Home() {
           <img
             src={getImageUrl("home-section-3", "webp")}
             alt="indikran-workshop"
+            className="hidden md:block"
+          />
+          <img
+            src={getImageUrl("home-section-3-mob", "webp")}
+            alt="indikran-workshop"
+            className="block md:hidden"
           />
         </div>
 
-        <section className="bg-[url('/src/assets/images/cover-white.webp')] bg-cover bg-center bg-no-repeat w-full py-20">
-          <div className="mx-20 h-auto min-h-screen">
-            <div className="flex items-start">
-              <p className="text-second w-1/2">VISION AND MISSION</p>
-              <article className="flex flex-col w-1/2 h-[30vh]">
-                <h2 className="text-4xl">
-                  <b className="text-prime">Leading the way</b> to{" "}
-                  <b className="text-prime">provides</b> the{" "}
-                  <b className="text-prime">best solutions and services</b> for
-                  your needs
+        <section className="bg-white md:bg-[url('/src/assets/images/cover-white.webp')] bg-cover bg-center bg-no-repeat w-full md:py-20 py-16">
+          <div className="md:mx-20 mx-8 h-auto min-h-screen">
+            <div className="md:flex items-start w-full">
+              <p className="text-second md:w-1/2">VISION AND MISSION</p>
+              <article className="md:flex-col md:w-1/2 h-[30vh]">
+                <h2 className="md:text-4xl text-[1.2rem] mt-14 md:mt-0 font-light">
+                  <b className="text-prime font-semibold">Leading the way</b> to{" "}
+                  <b className="text-prime font-semibold">provides</b> the{" "}
+                  <b className="text-prime font-semibold">
+                    best solutions and services
+                  </b>{" "}
+                  for your needs
                 </h2>
                 <Link className="flex mt-12 items-center" to="/en/about">
                   <p className="underline">Learn More</p>
@@ -148,7 +224,16 @@ function Home() {
               </article>
             </div>
 
-            <div className="flex">
+            {/* Mobile */}
+            <div className="md:hidden w-full block">
+              <img
+                src={getImageUrl("home-section-4-mob", "webp")}
+                alt="indikran-workshop"
+              />
+            </div>
+
+            {/* Dekstop */}
+            <div className="md:flex hidden">
               <div className="w-1/2"></div>
               <div className="w-1/2 pt-20">
                 <img
@@ -158,23 +243,31 @@ function Home() {
               </div>
             </div>
 
-            <div className="flex mt-[10rem]">
-              <p className="text-second w-1/2">CERTIFICATION</p>
-              <article className="w-1/2">
+            <div className="md:flex mt-[10rem] w-full">
+              <p className="text-second md:w-1/2">CERTIFICATION</p>
+              <article className="md:w-1/2 md:block hidden">
                 <h2 className="text-[2.3rem]">Registered and acknowledge</h2>
               </article>
+              {/* mobile */}
+              <p className="text-[1.2rem] md:hidden block mt-14">
+                Registered and acknowledge by the{" "}
+                <b className="text-prime">
+                  International Organization for Standardization (ISO)
+                </b>
+              </p>
             </div>
-            <h2 className="text-[2.7rem]">
+            {/* Dekstop */}
+            <h2 className="text-[2.7rem] hidden md:block">
               by the{" "}
               <b className="text-prime">
                 International Organization for Standardization (ISO)
               </b>
             </h2>
 
-            <div className="flex mt-20">
+            <div className="md:flex mt-20">
               <p className="text-second w-1/2"></p>
-              <article className="flex flex-col w-1/2 h-[30vh]">
-                <p className="text-xl">
+              <article className="md:flex-col md:w-1/2 h-[30vh]">
+                <p className="md:text-xl text-[1.2rem]">
                   Indikran is a service company that was established in the
                   early 2000s. It is an authorised legal entity that engages in
                   the sales, refurbishment and testing of electrical products.
@@ -182,7 +275,7 @@ function Home() {
                 <img
                   src={getImageUrl("indikran-docs", "webp")}
                   alt="document-indikran"
-                  className="w-1/2 py-4"
+                  className="md:w-1/2 w-4/5 py-4"
                 />
                 <Link className="flex items-center" to="/en/about">
                   <p className="underline">View Document</p>
@@ -195,45 +288,63 @@ function Home() {
               </article>
             </div>
 
-            <div className="flex mt-[10rem]">
-              <p className="text-second w-1/2">PARTNERSHIPS</p>
-              <article className="w-1/2">
+            <div className="md:flex md:mt-[10rem] mt-[14rem] w-full">
+              <p className="text-second md:w-1/2 font-bold">PARTNERSHIPS</p>
+              <article className="w-1/2 hidden md:block">
                 <h2 className="text-[2.3rem]">
                   We've formed <b className="text-prime">Valuable</b>
                 </h2>
               </article>
+              {/* Mobile */}
+              <p className="text-[1.18rem] block md:hidden mt-14 font-light">
+                We've formed{" "}
+                <b className="text-prime font-bold">
+                  valuable partnerships and collaborations
+                </b>{" "}
+                with a diverse range of businesses
+              </p>
             </div>
-            <h2 className="text-[2.7rem]">
+            {/* Dekstop */}
+            <h2 className="text-[2.7rem] md:block hidden">
               <b className="text-prime">partnerships and collaborations</b> with
               diverse range of businesses
             </h2>
           </div>
         </section>
 
-        <div className="w-full py-20">
-          <img src={getImageUrl("partnerships", "webp")} alt="partnerships" />
+        <div className="w-full md:py-20 py-14">
+          <img
+            src={getImageUrl("partnerships", "webp")}
+            alt="partnerships"
+            className="md:block hidden"
+          />
+          <img
+            src={getImageUrl("partnerships-mob", "webp")}
+            alt="partnerships"
+            className="md:hidden block"
+          />
         </div>
 
-        <section>
-          <div className="w-full h-[70vh] bg-[url('/src/assets/images/home-section-5.webp')] bg-cover bg-center bg-no-repeat">
-            <article className="mx-20 flex h-full items-end ">
-              <p className="text-white py-10 text-5xl font-light">
+        <div>
+          <div className="w-full md:h-[70vh] h-[50vh] bg-[url('/src/assets/images/home-section-5-mob.webp')] md:bg-[url('/src/assets/images/home-section-5.webp')] bg-cover bg-center bg-no-repeat">
+            <article className="md:mx-20 mx-8 flex h-full items-end ">
+              <p className="text-white py-10 md:text-5xl text-[1.7rem] font-light">
                 Service company established since 2000
               </p>
             </article>
           </div>
 
-          <article className="flex mx-20 mt-20 items-start">
-            <h2 className="w-1/2 text-3xl">
+          <article className="md:flex md:mx-20 mx-8 mt-20 items-start">
+            <h2 className="md:w-1/2 md:text-3xl text-[1.2rem]">
               Need help? We’re always <br />
               <b className="text-prime">here to collaborate</b>
             </h2>
             <Link
-              className="flex w-1/2 justify-end items-center"
+              className="flex md:w-1/2 md:justify-end md:items-center py-10"
               to="/en/contact"
             >
               <p className="underline text-prime text-xl font-light">
-                Get in touch with us
+                Learn More
               </p>
               <img
                 src={getImageUrl("arrow", "webp")}
@@ -242,7 +353,7 @@ function Home() {
               />
             </Link>
           </article>
-        </section>
+        </div>
       </main>
       <Footer />
     </>
