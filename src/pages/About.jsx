@@ -10,9 +10,9 @@ function About() {
       <Header />
       <main>
         <section className="bg-cover bg-center bg-no bg-repeat w-full">
-          <div className="mx-20 min-h-[50vh] items-end flex">
+          <div className="md:mx-20 mx-8 md:min-h-[50vh] min-h-[35vh] items-end flex">
             <div className="flex pb-10">
-              <h2 className="text-6xl font-extralight">ABOUT US</h2>
+              <h2 className="md:text-6xl text-4xl font-extralight">ABOUT US</h2>
               <img
                 src={getImageUrl("arrow", "webp")}
                 alt="arrow"
@@ -23,14 +23,19 @@ function About() {
           <img
             src={getImageUrl("about-section-1", "webp")}
             alt="indikran-workshop"
-            className="w-full"
+            className="w-full hidden md:block"
+          />
+          <img
+            src={getImageUrl("about-section-1-mob", "webp")}
+            alt="indikran-workshop"
+            className="w-full block md:hidden"
           />
         </section>
 
         <section>
-          <div className="mx-20 min-h-screen h-auto">
+          <div className="md:mx-20 mx-8 min-h-screen h-auto">
             <div className="flex mt-20">
-              <p className="text-second w-1/2 font-bold">ABOUT US</p>
+              <p className="text-second md:w-1/2 font-bold">ABOUT US</p>
               <article className="flex w-1/2">
                 <p className="text-[2.2rem]">
                   <b className="text-prime">We pioneer the future </b>with

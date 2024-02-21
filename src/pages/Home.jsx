@@ -12,12 +12,14 @@ function Home() {
         <section className="bg-[url('/src/assets/images/main-section-mobile.webp')] md:bg-[url('/src/assets/images/main-section.webp')] bg-cover bg-center bg-no-repeat w-full">
           <div className="flex mx-8 md:mx-20 min-h-[100vh] text-white items-end">
             <article className="w-full h-[25vh] mb-1">
+              {/* Dekstop */}
               <p className="text-[4rem] leading-none flex-1 justify-center hidden md:block">
                 <b>An effecient approach</b>
                 <br />
                 specializing in <b>heavy machinery</b>
               </p>
-              <p className="text-white block md:hidden font-thin text-[1.8rem]">
+              {/* Mobile */}
+              <p className="text-white block md:hidden font-thin text-[1.6rem]">
                 <b className="font-bold">An efficient</b> <br />
                 <b className="font-bold">approach</b> Specializing <br /> in
                 <b className="font-bold"> heavy machinery</b>

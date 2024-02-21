@@ -7,6 +7,11 @@ function Footer() {
       <footer className="bg-shade w-full min-h-[40vh] h-auto border-t-2 border-dashed border-third">
         <div className="mx-20 h-full">
           <div className="w-full flex justify-end items-center pt-10">
+            <img
+              src={getImageUrl("logo-white", "webp")}
+              alt="logo-indikran"
+              className="w-[18vw]"
+            />
             <a href="#">
               <img
                 src={getImageUrl("arrow-white", "webp")}
@@ -18,7 +23,7 @@ function Footer() {
           </div>
 
           <div className="w-full pt-10 flex">
-            <div className="w-4/5">
+            <div className="w-4/5 hidden md:block">
               <img
                 src={getImageUrl("logo-white", "webp")}
                 alt="logo-indikran"
