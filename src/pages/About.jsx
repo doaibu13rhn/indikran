@@ -34,24 +34,31 @@ function About() {
 
         <section>
           <div className="md:mx-20 mx-8 min-h-screen h-auto">
-            <div className="flex mt-20">
+            <div className="md:flex mt-20">
               <p className="text-second md:w-1/2 font-bold">ABOUT US</p>
-              <article className="flex w-1/2">
-                <p className="text-[2.2rem]">
+              <article className="md:flex md:w-1/2">
+                {/* Dekstop */}
+                <p className="text-[2.2rem] hidden md:block">
                   <b className="text-prime">We pioneer the future </b>with
+                </p>
+                {/* Mobile */}
+                <p className="text-xl md:hidden block mt-10">
+                  <b className="text-prime">We pioneer the future </b>with an{" "}
+                  <b className="text-prime">efficient solutions</b>
+                  specializing in heavy machinery
                 </p>
               </article>
             </div>
-            <p className="text-[2.6rem] leading-tight">
+            <p className="text-[2.6rem] leading-tight hidden md:block">
               an<b className="text-prime"> efficient solutions</b> specializing{" "}
               <br /> in heavy machinery.
             </p>
 
             <div className="flex mt-14">
-              <div className="w-1/2"></div>
-              <div className="w-1/2">
+              <div className="md:w-1/2"></div>
+              <div className="md:w-1/2">
                 <article className="">
-                  <p className="text-second text-2xl text-justify">
+                  <p className="text-fourth md:text-2xl text-base text-justify">
                     Indikran is a service company that was established in the
                     early 2000s. It is an authorised legal entity that engages
                     in the sales, refurbishment and testing of electrical
@@ -83,25 +90,33 @@ function About() {
           ></iframe>
         </div>
 
-        <section className="bg-[url('/src/assets/images/cover-white.webp')] bg-center bg-cover bg-no-repeat">
-          <div className="mx-20 min-h-screen h-auto">
-            <div className="flex mt-20">
-              <p className="text-second w-1/2 font-bold">
+        <section className="bg-white md:bg-[url('/src/assets/images/cover-white.webp')] bg-center bg-cover bg-no-repeat">
+          <div className="md:mx-20 mx-8 min-h-screen h-auto">
+            <div className="md:flex mt-20">
+              <p className="text-second md:w-1/2 font-bold">
                 Leading the way to <br /> provide best solutions
               </p>
-              <article className="flex w-1/2">
-                <p className="text-[3.5rem] font-thin">VISION</p>
+              <article className="flex md:w-1/2 md:mt-0 mt-10">
+                <p className="md:text-[3.5rem] text-6xl font-extralight text-prime">
+                  VISION
+                </p>
               </article>
             </div>
 
-            <div className="flex mt-14">
-              <div className="w-1/2"></div>
-              <div className="w-1/2">
+            <div className="md:flex mt-14">
+              <div className="md:w-1/2"></div>
+              <div className="md:w-1/2">
                 <article className="">
-                  <p className="text-second text-4xl">
+                  <p className="text-second md:text-4xl text-xl font-medium">
                     “Enhancing these services consistently and maintaining high
                     quality work”
                   </p>
+                  <div className="w-full md:hidden block mt-5">
+                    <img
+                      src={getImageUrl("about-section-2-1", "webp")}
+                      alt="inidkran-workshop"
+                    />
+                  </div>
                   <p className="py-10 text-justify">
                     To provide timely to the Customer reliable equipment with
                     the maximum possible availability at the lowest possible
@@ -118,7 +133,7 @@ function About() {
               </div>
             </div>
           </div>
-          <div className="w-full h-full flex">
+          <div className="w-full h-full md:flex hidden">
             <div className="w-1/2 h-1/2">
               <div className="w-full">
                 <img
@@ -149,8 +164,16 @@ function About() {
           </div>
         </section>
         <section>
-          <div className="mx-20 h-auto min-h-screen">
-            <div className="flex mt-20">
+          {/* mobile */}
+          <div className="flex md:hidden">
+            <p className="ms-8 text-[12px] w-1/2 text-second font-semibold">
+              PROCESS OF WORK <br /> BEST FOR YOUR NEEDS
+            </p>
+            <img src={getImageUrl("repeb-mob", "webp")} alt="refurbishment" />
+          </div>
+          <div className="md:mx-20 mx-8 h-auto min-h-screen">
+            {/* Dekstop */}
+            <div className="md:flex mt-20 hidden">
               <p className="text-second w-1/2 font-bold">
                 PROCESS OF WORK <br /> BEST FOR YOUR NEEDS
               </p>
@@ -158,14 +181,23 @@ function About() {
                 <p className="text-[3.5rem] font-thin">MISSION</p>
               </article>
             </div>
+            {/* Mobile */}
+            <article className="block md:hidden mt-10 text-prime">
+              <p className="text-7xl font-extralight">MISSION</p>
+            </article>
 
-            <div className="flex mt-14">
-              <div className="w-1/2"></div>
-              <div className="w-1/2">
+            <div className="md:flex mt-14">
+              <div className="md:w-1/2"></div>
+              <div className="md:w-1/2">
                 <article className="">
-                  <p className="text-second text-4xl">
+                  <p className="text-second md:text-4xl text-xl font-semibold">
                     “Deliver a satisfactory work service to our clients”
                   </p>
+                  <img
+                    src={getImageUrl("home-section-3-mob", "webp")}
+                    alt="indikran-workshop"
+                    className="block md:hidden mt-8"
+                  />
                   <p className="py-10 text-justify">
                     At our Company, we strive to provide our Partners and
                     Clients with the best possible service. Our team of
@@ -178,71 +210,105 @@ function About() {
               </div>
             </div>
 
-            <div className="flex mt-20">
-              <p className="text-second w-1/2 font-bold">PROGRESS</p>
-              <article className="flex w-1/2">
-                <p className="text-[2.2rem]">
+            <div className="md:flex mt-20">
+              <p className="text-second md:w-1/2 font-bold">PROGRESS</p>
+              <article className="md:flex md:w-1/2">
+                <p className="text-[2.2rem] hidden md:block">
                   Our team <b className="text-prime">delivers solutions</b>
+                </p>
+                <p className="text-xl md:hidden block mt-8">
+                  <b className="text-prime">We pioneer the future</b> with an{" "}
+                  <b className="text-prime">efficient solutions</b> specializing
+                  in heavy machinery
                 </p>
               </article>
             </div>
-            <p className="text-[2.6rem] leading-tight">
+            <p className="text-[2.6rem] leading-tight md:block hidden">
               that<b className="text-prime"> help our clients optimezed</b>{" "}
               their <br />{" "}
               <b className="text-prime">manufacturing operations</b>
             </p>
-
-            <article className="w-full py-10 flex">
-              <div className="w-1/2">
-                <div className="flex-col">
-                  <p>PROJECTS</p>
-                  <p className="font-bold text-[4rem]">1,000+</p>
-                </div>
-              </div>
-              <div className="w-1/2 flex justify-between">
-                <div className="flex-col">
-                  <p>WAREHOUSE</p>
-                  <p className="font-bold text-[4rem]">2</p>
-                </div>
-                <div className="flex-col">
-                  <p>OURTEAM</p>
-                  <p className="font-bold text-[4rem]">105</p>
-                  <p className="text-[0.7rem]">AND STILL GROWING</p>
-                </div>
-                <div className="flex-col">
-                  <p>PARTNERS</p>
-                  <p className="font-bold text-[4rem]">2</p>
-                </div>
-              </div>
-            </article>
-
-            <Link className="flex items-center gap-x-2">
-              <p className="underline">View Projects</p>
-              <img
-                src={getImageUrl("arrow", "webp")}
-                alt="arrow"
-                className="w-8"
-              />
-            </Link>
           </div>
-
-          <img
-            src={getImageUrl("about-section-3", "webp")}
-            alt="indikran-employee"
-            className="py-7"
-          />
         </section>
 
+        <img
+          src={getImageUrl("about-section-3", "webp")}
+          alt="indikran-employee"
+          className="py-7 block md:hidden"
+        />
+
+        <div className="md:mx-20 mx-8">
+          <article className="py-10 md:flex">
+            <div className="md:w-1/2">
+              <div className="md:flex-col">
+                <p className="text-sm">PROJECTS</p>
+                <p className="font-bold text-[4rem] hidden md:block">1,000+</p>
+              </div>
+              <Link className="flex items-center gap-x-2 md:hidden">
+                <p className="font-bold md:text-[4rem] text-[2.5rem]">1,000+</p>
+                <p className="underline ms-5">View Projects</p>
+                <img
+                  src={getImageUrl("arrow", "webp")}
+                  alt="arrow"
+                  className="w-8"
+                />
+              </Link>
+            </div>
+            <div className="md:w-1/2 flex justify-between mt-10 md:mt-0">
+              <div className="flex-col">
+                <p className="text-sm">WAREHOUSE</p>
+                <p className="font-bold md:text-[4rem] text-[2.5rem]">2</p>
+              </div>
+              <div className="flex-col">
+                <p className="text-sm">OURTEAM</p>
+                <p className="font-bold md:text-[4rem] text-[2.5rem]">105</p>
+                <p className="md:text-[0.7rem] text-[0.5rem]">
+                  AND STILL GROWING
+                </p>
+              </div>
+              <div className="flex-col">
+                <p className="text-sm">PARTNERS</p>
+                <p className="font-bold md:text-[4rem] text-[2.5rem]">2</p>
+              </div>
+            </div>
+          </article>
+
+          <Link className="md:flex items-center gap-x-2 hidden">
+            <p className="underline">View Projects</p>
+            <img
+              src={getImageUrl("arrow", "webp")}
+              alt="arrow"
+              className="w-8"
+            />
+          </Link>
+        </div>
+
+        <img
+          src={getImageUrl("about-section-3", "webp")}
+          alt="indikran-employee"
+          className="py-7 hidden md:block"
+        />
+
         <section>
-          <div className="mx-20">
-            <div className="flex mt-14">
-              <div className="w-1/2"></div>
-              <div className="w-1/2">
-                <article className="flex">
+          <div className="md:mx-20 mx-8">
+            <div className="md:flex mt-14">
+              <div className="md:w-1/2"></div>
+              <div className="md:w-1/2">
+                <article className="md:flex">
                   <p className="text-second">CERTIFICATION</p>
-                  <p className="ms-[9rem] text-[2rem]">Registered and</p>
+                  {/* Mobile */}
+                  <p className="text-xl my-10 md:hidden block">
+                    Registered and acknowledge by the{" "}
+                    <b className="text-prime">
+                      International Organization for Standardization (ISO)
+                    </b>
+                  </p>
+                  {/* Dekstop */}
+                  <p className="ms-[9rem] text-[2rem] hidden md:block">
+                    Registered and
+                  </p>
                 </article>
-                <p className="text-[1.8rem]">
+                <p className="text-[1.8rem] hidden md:block">
                   acknowledge by the{" "}
                   <b className="text-prime">
                     International <br />
@@ -252,14 +318,17 @@ function About() {
                 </p>
 
                 <div className="certificate">
-                  <div className="w-full flex justify-between items-center border-b-2 border-prime border-dashed">
+                  <div className="flex justify-between items-center border-b-2 border-prime border-dashed">
                     <img
                       src={getImageUrl("certificate", "webp")}
                       alt="indikran-document"
+                      className="w-[60px]"
                     />
-                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p className="text-[0.8rem]">Lorem ipsum dolor sit amet.</p>
                     <div className="download flex items-center">
-                      <p className="text-prime me-5">download</p>
+                      <p className="text-prime me-5 hidden md:block text-sm">
+                        download
+                      </p>
                       <img
                         src={getImageUrl("arrow-2", "webp")}
                         alt="arrow-download"
@@ -268,14 +337,17 @@ function About() {
                     </div>
                   </div>
 
-                  <div className="w-full flex justify-between items-center border-b-2 border-prime border-dashed">
+                  <div className="flex justify-between items-center border-b-2 border-prime border-dashed">
                     <img
                       src={getImageUrl("certificate", "webp")}
                       alt="indikran-document"
+                      className="w-[60px]"
                     />
-                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p className="text-[0.8rem]">Lorem ipsum dolor sit amet.</p>
                     <div className="download flex items-center">
-                      <p className="text-prime me-5">download</p>
+                      <p className="text-prime me-5 hidden md:block text-sm">
+                        download
+                      </p>
                       <img
                         src={getImageUrl("arrow-2", "webp")}
                         alt="arrow-download"
@@ -284,14 +356,17 @@ function About() {
                     </div>
                   </div>
 
-                  <div className="w-full flex justify-between items-center border-b-2 border-prime border-dashed">
+                  <div className="flex justify-between items-center border-b-2 border-prime border-dashed">
                     <img
                       src={getImageUrl("certificate", "webp")}
                       alt="indikran-document"
+                      className="w-[60px]"
                     />
-                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p className="text-[0.8rem]">Lorem ipsum dolor sit amet.</p>
                     <div className="download flex items-center">
-                      <p className="text-prime me-5">download</p>
+                      <p className="text-prime me-5 hidden md:block text-sm">
+                        download
+                      </p>
                       <img
                         src={getImageUrl("arrow-2", "webp")}
                         alt="arrow-download"
@@ -300,14 +375,17 @@ function About() {
                     </div>
                   </div>
 
-                  <div className="w-full flex justify-between items-center border-b-2 border-prime border-dashed">
+                  <div className="flex justify-between items-center border-b-2 border-prime border-dashed">
                     <img
                       src={getImageUrl("certificate", "webp")}
                       alt="indikran-document"
+                      className="w-[60px]"
                     />
-                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p className="text-[0.8rem]">Lorem ipsum dolor sit amet.</p>
                     <div className="download flex items-center">
-                      <p className="text-prime me-5">download</p>
+                      <p className="text-prime me-5 hidden md:block text-sm">
+                        download
+                      </p>
                       <img
                         src={getImageUrl("arrow-2", "webp")}
                         alt="arrow-download"
@@ -316,14 +394,17 @@ function About() {
                     </div>
                   </div>
 
-                  <div className="w-full flex justify-between items-center border-b-2 border-prime border-dashed">
+                  <div className="flex justify-between items-center border-b-2 border-prime border-dashed">
                     <img
                       src={getImageUrl("certificate", "webp")}
                       alt="indikran-document"
+                      className="w-[60px]"
                     />
-                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p className="text-[0.8rem]">Lorem ipsum dolor sit amet.</p>
                     <div className="download flex items-center">
-                      <p className="text-prime me-5">download</p>
+                      <p className="text-prime me-5 hidden md:block text-sm">
+                        download
+                      </p>
                       <img
                         src={getImageUrl("arrow-2", "webp")}
                         alt="arrow-download"
@@ -332,14 +413,17 @@ function About() {
                     </div>
                   </div>
 
-                  <div className="w-full flex justify-between items-center border-b-2 border-prime border-dashed">
+                  <div className="flex justify-between items-center border-b-2 border-prime border-dashed">
                     <img
                       src={getImageUrl("certificate", "webp")}
                       alt="indikran-document"
+                      className="w-[60px]"
                     />
-                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p className="text-[0.8rem]">Lorem ipsum dolor sit amet.</p>
                     <div className="download flex items-center">
-                      <p className="text-prime me-5">download</p>
+                      <p className="text-prime me-5 hidden md:block text-sm">
+                        download
+                      </p>
                       <img
                         src={getImageUrl("arrow-2", "webp")}
                         alt="arrow-download"
@@ -361,45 +445,61 @@ function About() {
           </div>
         </section>
 
-        <div className="mx-20">
-          <div className="flex mt-[10rem]">
-            <p className="text-second w-1/2">PARTNERSHIPS</p>
-            <article className="w-1/2">
-              <h2 className="text-[2.3rem]">
+        <div className="md:mx-20 mx-8">
+          <div className="md:flex mt-[10rem]">
+            <p className="text-second w-1/2 font-bold">PARTNERSHIPS</p>
+            <article className="md:w-1/2">
+              <h2 className="text-[2.3rem] md:block hidden">
                 We've formed <b className="text-prime">Valuable</b>
+              </h2>
+              <h2 className="text-lg md:hidden block mt-10">
+                We've formed{" "}
+                <b className="text-prime">
+                  valuable partnerships and collaborations
+                </b>{" "}
+                with a diverse range of businesses
               </h2>
             </article>
           </div>
-          <h2 className="text-[2.7rem]">
+          <h2 className="text-[2.7rem] md:block hidden">
             <b className="text-prime">partnerships and collaborations</b> with
             diverse range of businesses
           </h2>
         </div>
 
-        <div className="w-full py-20">
-          <img src={getImageUrl("partnerships", "webp")} alt="partnerships" />
+        <div className="w-full md:py-20 py-14">
+          <img
+            src={getImageUrl("partnerships", "webp")}
+            alt="partnerships"
+            className="md:block hidden"
+          />
+          <img
+            src={getImageUrl("partnerships-mob", "webp")}
+            alt="partnerships"
+            className="md:hidden block"
+          />
         </div>
 
-        <section className="bg-shade">
-          <div className="w-full h-[70vh] bg-[url('/src/assets/images/home-section-5.webp')] bg-cover bg-center bg-no-repeat">
-            <article className="mx-20 flex h-full items-end ">
-              <p className="text-white py-10 text-5xl font-light">
+        <div>
+          <div className="w-full md:h-[70vh] h-[50vh] bg-[url('/src/assets/images/home-section-5-mob.webp')] md:bg-[url('/src/assets/images/home-section-5.webp')] bg-cover bg-center bg-no-repeat">
+            <article className="md:mx-20 mx-8 flex h-full items-end ">
+              <p className="text-white py-10 md:text-5xl text-[1.7rem] font-light">
                 Service company established since 2000
               </p>
             </article>
           </div>
 
-          <article className="flex mx-20 mt-20 items-start">
-            <h2 className="w-1/2 text-3xl text-white">
+          <article className="md:flex md:mx-20 mx-8 mt-20 items-start">
+            <h2 className="md:w-1/2 md:text-3xl text-[1.2rem]">
               Need help? We’re always <br />
-              <b className="text-second">here to collaborate</b>
+              <b className="text-prime">here to collaborate</b>
             </h2>
             <Link
-              className="flex w-1/2 justify-end items-center"
+              className="flex md:w-1/2 md:justify-end md:items-center py-10"
               to="/en/contact"
             >
-              <p className="underline text-white text-xl font-light">
-                Get in touch with us
+              <p className="underline text-prime text-xl font-light">
+                Learn More
               </p>
               <img
                 src={getImageUrl("arrow", "webp")}
@@ -408,7 +508,7 @@ function About() {
               />
             </Link>
           </article>
-        </section>
+        </div>
       </main>
       <Footer />
     </>
