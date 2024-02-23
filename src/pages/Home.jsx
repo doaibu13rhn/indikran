@@ -326,36 +326,6 @@ function Home() {
             className="md:hidden block"
           />
         </div>
-
-        <div>
-          <div className="w-full md:h-[70vh] h-[50vh] bg-[url('/src/assets/images/home-section-5-mob.webp')] md:bg-[url('/src/assets/images/home-section-5.webp')] bg-cover bg-center bg-no-repeat">
-            <article className="md:mx-20 mx-8 flex h-full items-end ">
-              <p className="text-white py-10 md:text-5xl text-[1.7rem] font-light">
-                Service company established since 2000
-              </p>
-            </article>
-          </div>
-
-          <article className="md:flex md:mx-20 mx-8 mt-20 items-start">
-            <h2 className="md:w-1/2 md:text-3xl text-[1.2rem]">
-              Need help? We’re always <br />
-              <b className="text-prime">here to collaborate</b>
-            </h2>
-            <Link
-              className="flex md:w-1/2 md:justify-end md:items-center py-10"
-              to="/en/contact"
-            >
-              <p className="underline text-prime text-xl font-light">
-                Learn More
-              </p>
-              <img
-                src={getImageUrl("arrow", "webp")}
-                alt="arrow"
-                className="max-w-full max-h-full ms-3"
-              />
-            </Link>
-          </article>
-        </div>
       </main>
       <Footer />
     </>
