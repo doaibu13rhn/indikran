@@ -77,7 +77,7 @@ function Service() {
               </div>
             </div>
 
-            <details className="collapse">
+            <details className="collapse" id="refurbishment">
               <summary className="collapse text-xl font-medium border-t-2 border-x-2 mb-10 rounded-bl-none rounded-br-none border-dashed border-second">
                 <div className="w-full flex p-4 items-center justify-around">
                   <div className="md:w-1/2 w-[30%]">

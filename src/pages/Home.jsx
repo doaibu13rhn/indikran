@@ -132,7 +132,7 @@ function Home() {
               <div className="w-1/2">
                 <div className="flex w-full gap-5">
                   <div className="w-1/2">
-                    <Link to="/en/service" className="">
+                    <Link to="/en/service#refurbishment" className="">
                       <img
                         src={getImageUrl("refurbishment", "webp")}
                         alt="refurbishment"

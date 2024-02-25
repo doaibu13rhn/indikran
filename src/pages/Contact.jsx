@@ -83,11 +83,12 @@ function Contact() {
                 placeholder="*Job Title"
                 className="input input-bordered border-black w-full mt-5 max-w-xs"
               />
-              <select className="w-full border border-black rounded-md mt-5 max-w-xs py-3">
-                <option value="" className="font-thin">
+              <select className="select select-bordered border-black mt-5 w-full max-w-xs">
+                <option disabled selected>
                   *Subject
                 </option>
-                <option value="appliaction-letter">application letter</option>
+                <option>Application Letter</option>
+                <option>Business Agreement</option>
               </select>
               <input
                 type="text"
