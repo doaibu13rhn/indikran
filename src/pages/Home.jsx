@@ -314,7 +314,7 @@ function Home() {
           </div>
         </section>
 
-        <div className="w-full md:py-20 py-14">
+        <div className="w-full md:py-20 py-14 bg-white">
           <img
             src={getImageUrl("partnerships", "webp")}
             alt="partnerships"

@@ -98,10 +98,27 @@ function Service() {
                   </div>
                 </div>
               </summary>
-              <div className="collapse-content flex justify-between">
-                <p>content</p>
-                <p>ddd</p>
-                pdddd
+              <div className="collapse-content flex justify-between w-full mb-8">
+                <p className="w-1/2 text-xl text-second">
+                  We offer a comprehensive <br /> range of consultation <br />{" "}
+                  and services
+                </p>
+                <div className="w-[25%]">
+                  <img
+                    src={getImageUrl("service-mp", "webp")}
+                    alt="service-manpower"
+                    className="w-[90%]"
+                  />
+                </div>
+                <p className="w-[25%] text-xs">
+                  We offer a comprehensive range of consultation and services
+                  for Refurbishment that includes Mechanical and Electrical
+                  Tricks, Excavator and Loaders. <br />
+                  <br /> This includes identifying each major or minor part that
+                  needs to be analysed on or off-site, reporting with solutions
+                  from our Experts, dismantle, repair, sourcing, adjustment,
+                  testing and warranty to give the best outcome for You.
+                </p>
               </div>
             </details>
             <details className="collapse">
@@ -125,10 +142,27 @@ function Service() {
                   </div>
                 </div>
               </summary>
-              <div className="collapse-content flex justify-between">
-                <p>content</p>
-                <p>ddd</p>
-                pdddd
+              <div className="collapse-content flex justify-between w-full mb-8">
+                <p className="w-1/2 text-second text-xl">
+                  With one of the largest <br /> test benches for hydraulic{" "}
+                  <br />
+                  and transmission in Eastern Indonesia
+                </p>
+                <div className="w-[25%]">
+                  <img
+                    src={getImageUrl("service-mp", "webp")}
+                    alt="service-manpower"
+                    className="w-[90%]"
+                  />
+                </div>
+                <p className="text-xs w-[25%]">
+                  With one of the largest test benches for hydraulic and
+                  transmission in Eastern Indonesia, we'll be the best at
+                  ensuring the quality and performance of Your product. <br />
+                  <br /> From motor hydraulic, pump to bolting tools, we’re able
+                  to check and ensure it’s within the Manufacturer's standard
+                  for its flow and pressure.
+                </p>
               </div>
             </details>
             <details className="collapse">
@@ -152,12 +186,25 @@ function Service() {
                   </div>
                 </div>
               </summary>
-              <div className="collapse-content flex justify-between">
-                <p className="text-second text-xl">
+              <div className="collapse-content flex justify-between w-full mb-8">
+                <p className="text-second text-xl w-1/2">
                   Our Teams are <br /> highly experienced <br /> and registered
                 </p>
-                <p>ddd</p>
-                pdddd
+                <div className="w-[25%]">
+                  <img
+                    src={getImageUrl("service-mp", "webp")}
+                    alt="service-manpower"
+                    className="w-[90%]"
+                  />
+                </div>
+                <p className="w-[25%] text-xs">
+                  Our Teams are highly experienced and registered to work
+                  on-site while adhering to strict safety regulations for more
+                  than 20 years. <br />
+                  <br /> Furthermore, we offer consultation on equipment for use
+                  both on and offsite based on the needs of the Companies we
+                  partner with.
+                </p>
               </div>
             </details>
             <details className="collapse">
@@ -167,7 +214,7 @@ function Service() {
                     <p className="text-second">04</p>
                   </div>
                   <div className="md:w-1/2 w-[70%] flex justify-between items-center">
-                    <p>Sales</p>
+                    <p>Supply</p>
                     <div className="flex flex-col items-center">
                       <img
                         src={getImageUrl("arrow-2", "webp")}
@@ -181,10 +228,23 @@ function Service() {
                   </div>
                 </div>
               </summary>
-              <div className="collapse-content flex justify-between">
-                <p>content</p>
-                <p>ddd</p>
-                pdddd
+              <div className="collapse-content flex justify-between w-full mb-8">
+                <p className="w-1/2 text-second text-xl">
+                  To ensure a smoother process <br /> that works better
+                </p>
+                <div className="w-[25%]">
+                  <img
+                    src={getImageUrl("service-mp", "webp")}
+                    alt="service-manpower"
+                    className="w-[90%]"
+                  />
+                </div>
+                <p className="text-xs w-[25%]">
+                  To ensure a smoother process that works better for Your
+                  timeline, let us help you source component counterparts for
+                  Your needs. From main pumps to regulators, just let us know
+                  how we can assist You.
+                </p>
               </div>
             </details>
           </div>
