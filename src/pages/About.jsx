@@ -9,7 +9,7 @@ function About() {
     <>
       <Header />
       <main>
-        <section className="bg-cover bg-center bg-no bg-repeat w-full">
+        <section className="bg-white bg-cover bg-center bg-no bg-repeat w-full">
           <div className="md:mx-20 mx-8 md:min-h-[50vh] min-h-[35vh] items-end flex">
             <div className="flex pb-10">
               <h2 className="md:text-6xl text-4xl font-extralight">ABOUT US</h2>
@@ -32,7 +32,7 @@ function About() {
           />
         </section>
 
-        <section>
+        <section className="bg-white">
           <div className="md:mx-20 mx-8 min-h-screen h-auto">
             <div className="md:flex mt-20">
               <p className="text-second md:w-1/2 font-bold">ABOUT US</p>
@@ -163,7 +163,8 @@ function About() {
             </div>
           </div>
         </section>
-        <section>
+
+        <section className="bg-white">
           {/* mobile */}
           <div className="flex md:hidden">
             <p className="ms-8 text-[12px] w-1/2 text-second font-semibold">
@@ -237,7 +238,7 @@ function About() {
           className="py-7 block md:hidden"
         />
 
-        <div className="md:mx-20 mx-8">
+        <div className="md:mx-20 mx-8 bg-white">
           <article className="py-10 md:flex">
             <div className="md:w-1/2">
               <div className="md:flex-col">
@@ -289,7 +290,7 @@ function About() {
           className="py-7 hidden md:block"
         />
 
-        <section>
+        <section className="bg-white">
           <div className="md:mx-20 mx-8">
             <div className="md:flex mt-14">
               <div className="md:w-1/2"></div>
@@ -445,7 +446,7 @@ function About() {
           </div>
         </section>
 
-        <div className="md:mx-20 mx-8">
+        <div className="md:mx-20 mx-8 bg-white">
           <div className="md:flex mt-[10rem]">
             <p className="text-second w-1/2 font-bold">PARTNERSHIPS</p>
             <article className="md:w-1/2">
@@ -467,7 +468,7 @@ function About() {
           </h2>
         </div>
 
-        <div className="w-full md:py-20 py-14">
+        <div className="w-full md:py-20 py-14 bg-white">
           <img
             src={getImageUrl("partnerships", "webp")}
             alt="partnerships"

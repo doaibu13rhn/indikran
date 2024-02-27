@@ -34,7 +34,7 @@ function Service() {
           </div>
         </section>
 
-        <section>
+        <section className="bg-white">
           <div className="md:mx-20 mx-8 h-auto min-h-screen">
             <div className="md:flex mt-20">
               <p className="text-second md:w-1/2 font-bold">SERVICES</p>
@@ -98,19 +98,27 @@ function Service() {
                   </div>
                 </div>
               </summary>
-              <div className="collapse-content flex justify-between w-full mb-8">
-                <p className="w-1/2 text-xl text-second">
+              <div className="collapse-content md:flex md:justify-between w-full mb-8">
+                <p className="md:w-1/2 hidden md:block md:text-xl text-second">
                   We offer a comprehensive <br /> range of consultation <br />{" "}
                   and services
                 </p>
-                <div className="w-[25%]">
+                <p className="text-second md:hidden block">
+                  We offer a comprehensive range of consultation and services
+                </p>
+                <div className="md:w-[25%] w-full mt-5 md:mt-0">
                   <img
                     src={getImageUrl("service-mp", "webp")}
                     alt="service-manpower"
-                    className="w-[90%]"
+                    className="w-[90%] hidden md:block"
+                  />
+                  <img
+                    src={getImageUrl("service-manpower-mob", "webp")}
+                    alt="service-manpower"
+                    className="w-full md:hidden block"
                   />
                 </div>
-                <p className="w-[25%] text-xs">
+                <p className="md:w-[25%] md:text-xs text-[0.8rem] mt-5 md:mt-0">
                   We offer a comprehensive range of consultation and services
                   for Refurbishment that includes Mechanical and Electrical
                   Tricks, Excavator and Loaders. <br />
@@ -142,20 +150,28 @@ function Service() {
                   </div>
                 </div>
               </summary>
-              <div className="collapse-content flex justify-between w-full mb-8">
-                <p className="w-1/2 text-second text-xl">
+              <div className="collapse-content md:flex md:justify-between w-full mb-8">
+                <p className="md:w-1/2 hidden md:block md:text-xl text-second">
                   With one of the largest <br /> test benches for hydraulic{" "}
-                  <br />
-                  and transmission in Eastern Indonesia
+                  <br /> and transmission in Eastern Indonesia
                 </p>
-                <div className="w-[25%]">
+                <p className="text-second md:hidden block">
+                  With one of the largest test benches for hydraulic and
+                  transmission in Eastern Indonesia
+                </p>
+                <div className="md:w-[25%] w-full mt-5 md:mt-0">
                   <img
                     src={getImageUrl("service-mp", "webp")}
                     alt="service-manpower"
-                    className="w-[90%]"
+                    className="w-[90%] hidden md:block"
+                  />
+                  <img
+                    src={getImageUrl("service-manpower-mob", "webp")}
+                    alt="service-manpower"
+                    className="w-full md:hidden block"
                   />
                 </div>
-                <p className="text-xs w-[25%]">
+                <p className="md:w-[25%] md:text-xs text-[0.8rem] mt-5 md:mt-0">
                   With one of the largest test benches for hydraulic and
                   transmission in Eastern Indonesia, we'll be the best at
                   ensuring the quality and performance of Your product. <br />
@@ -186,18 +202,26 @@ function Service() {
                   </div>
                 </div>
               </summary>
-              <div className="collapse-content flex justify-between w-full mb-8">
-                <p className="text-second text-xl w-1/2">
+              <div className="collapse-content md:flex md:justify-between w-full mb-8">
+                <p className="md:w-1/2 hidden md:block md:text-xl text-second">
                   Our Teams are <br /> highly experienced <br /> and registered
                 </p>
-                <div className="w-[25%]">
+                <p className="text-second md:hidden block">
+                  Our Teams are highly experienced and registered
+                </p>
+                <div className="md:w-[25%] w-full mt-5 md:mt-0">
                   <img
                     src={getImageUrl("service-mp", "webp")}
                     alt="service-manpower"
-                    className="w-[90%]"
+                    className="w-[90%] hidden md:block"
+                  />
+                  <img
+                    src={getImageUrl("service-manpower-mob", "webp")}
+                    alt="service-manpower"
+                    className="w-full md:hidden block"
                   />
                 </div>
-                <p className="w-[25%] text-xs">
+                <p className="md:w-[25%] md:text-xs text-[0.8rem] mt-5 md:mt-0">
                   Our Teams are highly experienced and registered to work
                   on-site while adhering to strict safety regulations for more
                   than 20 years. <br />
@@ -228,18 +252,26 @@ function Service() {
                   </div>
                 </div>
               </summary>
-              <div className="collapse-content flex justify-between w-full mb-8">
-                <p className="w-1/2 text-second text-xl">
+              <div className="collapse-content md:flex md:justify-between w-full mb-8">
+                <p className="md:w-1/2 hidden md:block md:text-xl text-second">
                   To ensure a smoother process <br /> that works better
                 </p>
-                <div className="w-[25%]">
+                <p className="text-second md:hidden block">
+                  To ensure a smoother process that works better
+                </p>
+                <div className="md:w-[25%] w-full mt-5 md:mt-0">
                   <img
                     src={getImageUrl("service-mp", "webp")}
                     alt="service-manpower"
-                    className="w-[90%]"
+                    className="w-[90%] hidden md:block"
+                  />
+                  <img
+                    src={getImageUrl("service-manpower-mob", "webp")}
+                    alt="service-manpower"
+                    className="w-full md:hidden block"
                   />
                 </div>
-                <p className="text-xs w-[25%]">
+                <p className="md:w-[25%] md:text-xs text-[0.8rem] mt-5 md:mt-0">
                   To ensure a smoother process that works better for Your
                   timeline, let us help you source component counterparts for
                   Your needs. From main pumps to regulators, just let us know

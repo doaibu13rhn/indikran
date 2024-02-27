@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import getImageUrl from "../utils/imageGetter";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import { HashLink } from "react-router-hash-link";
 
 function Home() {
   return (
@@ -114,9 +115,10 @@ function Home() {
               </div>
             </div>
 
-            <Link
+            <HashLink
               className="flex mt-12 items-center md:hidden text-white font-extralight mb-10"
-              to="/en/about"
+              smooth
+              to="/en/service/#refurbishment"
             >
               <p className="underline">Learn More</p>
               <img
@@ -124,7 +126,7 @@ function Home() {
                 alt="arrow"
                 className="max-w-full max-h-full ms-4"
               />
-            </Link>
+            </HashLink>
 
             {/* Dekstop */}
             <div className="md:flex text-white mt-14 gap-5 hidden">

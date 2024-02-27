@@ -1,5 +1,6 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import getImageUrl from "../utils/imageGetter";
 
 function Footer() {
@@ -34,7 +35,7 @@ function Footer() {
             </h2>
             <Link
               className="flex md:w-1/2 md:justify-end md:items-center py-10"
-              to="/en/contact"
+              to="/en/contact/#"
             >
               <p
                 className={`underline ${
@@ -119,14 +120,14 @@ function Footer() {
                 </p>
 
                 <article className="font-normal text-third text-[0.7rem] md:pt-5 w-1/3 flex md:flex-col gap-x-6">
-                  <div>
+                  <HashLink smooth to="/en/service/#refurbishment">
                     <p className="">Refurbishment</p>
                     <p className="mt-2">Testing</p>
-                  </div>
-                  <div>
+                  </HashLink>
+                  <HashLink smooth to="/en/service/#refurbishment">
                     <p className="md:mt-2">Manpower</p>
-                    <p className="mt-2">Sales</p>
-                  </div>
+                    <p className="mt-2">Supply</p>
+                  </HashLink>
                 </article>
               </div>
               <div className="md:flex-col flex">
