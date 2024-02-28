@@ -120,8 +120,7 @@ const Header = () => {
               isAboutOrContactPage ? "text-black" : ""
             }`}
           >
-            <div className="en cursor-pointer hover:text-second">EN</div>|
-            <div className="id cursor-pointer hover:text-second">ID</div>
+            <div className="en">EN</div>|<div className="id">ID</div>
           </div>
         </div>
       </nav>

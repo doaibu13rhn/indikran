@@ -142,7 +142,11 @@ function Footer() {
                   Jalan Mulawarman No.227, Sepinggan, Kecamatan Balikpapan
                   Selatan, Kota Balikpapan, Kalimantan Timur 76114
                 </p>
-                <div className="md:flex items-center pt-5 hidden">
+                <HashLink
+                  className="md:flex items-center pt-5 hidden"
+                  smooth
+                  to="/en/contact/#maps"
+                >
                   <p
                     className={`underline ${
                       isHomePage ? "text-second" : "text-white"
@@ -155,7 +159,7 @@ function Footer() {
                     alt="arrow"
                     className="w-6 ms-2"
                   />
-                </div>
+                </HashLink>
               </div>
             </div>
           </div>

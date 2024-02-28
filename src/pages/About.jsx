@@ -34,7 +34,7 @@ function About() {
 
         <section className="bg-white">
           <div className="md:mx-20 mx-8 min-h-screen h-auto">
-            <div className="md:flex mt-20">
+            <div className="md:flex pt-20">
               <p className="text-second md:w-1/2 font-bold">ABOUT US</p>
               <article className="md:flex md:w-1/2">
                 {/* Dekstop */}
@@ -92,7 +92,7 @@ function About() {
 
         <section className="bg-white md:bg-[url('/src/assets/images/cover-white.webp')] bg-center bg-cover bg-no-repeat">
           <div className="md:mx-20 mx-8 min-h-screen h-auto">
-            <div className="md:flex mt-20">
+            <div className="md:flex pt-20">
               <p className="text-second md:w-1/2 font-bold">
                 Leading the way to <br /> provide best solutions
               </p>
@@ -103,7 +103,7 @@ function About() {
               </article>
             </div>
 
-            <div className="md:flex mt-14">
+            <div className="md:flex pt-14">
               <div className="md:w-1/2"></div>
               <div className="md:w-1/2">
                 <article className="">
@@ -164,7 +164,7 @@ function About() {
           </div>
         </section>
 
-        <section className="bg-white">
+        <section className="bg-white bg-cover">
           {/* mobile */}
           <div className="flex md:hidden">
             <p className="ms-8 text-[12px] w-1/2 text-second font-semibold">
@@ -232,63 +232,69 @@ function About() {
           </div>
         </section>
 
-        <img
-          src={getImageUrl("about-section-3", "webp")}
-          alt="indikran-employee"
-          className="py-7 block md:hidden"
-        />
+        <div className="bg-white bg-cover bg-center bg-no-repeat">
+          <img
+            src={getImageUrl("about-section-3", "webp")}
+            alt="indikran-employee"
+            className="py-7 block md:hidden"
+          />
 
-        <div className="md:mx-20 mx-8 bg-white">
-          <article className="py-10 md:flex">
-            <div className="md:w-1/2">
-              <div className="md:flex-col">
-                <p className="text-sm">PROJECTS</p>
-                <p className="font-bold text-[4rem] hidden md:block">1,000+</p>
+          <div className="md:mx-20 mx-8">
+            <article className="py-10 md:flex">
+              <div className="md:w-1/2">
+                <div className="md:flex-col">
+                  <p className="text-sm">PROJECTS</p>
+                  <p className="font-bold text-[4rem] hidden md:block">
+                    1,000+
+                  </p>
+                </div>
+                <Link className="flex items-center gap-x-2 md:hidden">
+                  <p className="font-bold md:text-[4rem] text-[2.5rem]">
+                    1,000+
+                  </p>
+                  <p className="underline ms-5">View Projects</p>
+                  <img
+                    src={getImageUrl("arrow", "webp")}
+                    alt="arrow"
+                    className="w-8"
+                  />
+                </Link>
               </div>
-              <Link className="flex items-center gap-x-2 md:hidden">
-                <p className="font-bold md:text-[4rem] text-[2.5rem]">1,000+</p>
-                <p className="underline ms-5">View Projects</p>
-                <img
-                  src={getImageUrl("arrow", "webp")}
-                  alt="arrow"
-                  className="w-8"
-                />
-              </Link>
-            </div>
-            <div className="md:w-1/2 flex justify-between mt-10 md:mt-0">
-              <div className="flex-col">
-                <p className="text-sm">WAREHOUSE</p>
-                <p className="font-bold md:text-[4rem] text-[2.5rem]">2</p>
+              <div className="md:w-1/2 flex justify-between mt-10 md:mt-0">
+                <div className="flex-col">
+                  <p className="text-sm">WAREHOUSE</p>
+                  <p className="font-bold md:text-[4rem] text-[2.5rem]">2</p>
+                </div>
+                <div className="flex-col">
+                  <p className="text-sm">OURTEAM</p>
+                  <p className="font-bold md:text-[4rem] text-[2.5rem]">105</p>
+                  <p className="md:text-[0.7rem] text-[0.5rem]">
+                    AND STILL GROWING
+                  </p>
+                </div>
+                <div className="flex-col">
+                  <p className="text-sm">PARTNERS</p>
+                  <p className="font-bold md:text-[4rem] text-[2.5rem]">2</p>
+                </div>
               </div>
-              <div className="flex-col">
-                <p className="text-sm">OURTEAM</p>
-                <p className="font-bold md:text-[4rem] text-[2.5rem]">105</p>
-                <p className="md:text-[0.7rem] text-[0.5rem]">
-                  AND STILL GROWING
-                </p>
-              </div>
-              <div className="flex-col">
-                <p className="text-sm">PARTNERS</p>
-                <p className="font-bold md:text-[4rem] text-[2.5rem]">2</p>
-              </div>
-            </div>
-          </article>
+            </article>
 
-          <Link className="md:flex items-center gap-x-2 hidden">
-            <p className="underline">View Projects</p>
-            <img
-              src={getImageUrl("arrow", "webp")}
-              alt="arrow"
-              className="w-8"
-            />
-          </Link>
+            <Link className="md:flex items-center gap-x-2 hidden">
+              <p className="underline">View Projects</p>
+              <img
+                src={getImageUrl("arrow", "webp")}
+                alt="arrow"
+                className="w-8"
+              />
+            </Link>
+          </div>
+
+          <img
+            src={getImageUrl("about-section-3", "webp")}
+            alt="indikran-employee"
+            className="py-7 hidden md:block"
+          />
         </div>
-
-        <img
-          src={getImageUrl("about-section-3", "webp")}
-          alt="indikran-employee"
-          className="py-7 hidden md:block"
-        />
 
         <section className="bg-white">
           <div className="md:mx-20 mx-8">
@@ -447,7 +453,7 @@ function About() {
         </section>
 
         <div className="md:mx-20 mx-8 bg-white">
-          <div className="md:flex mt-[10rem]">
+          <div className="md:flex md:pt-[10rem] pt-16">
             <p className="text-second w-1/2 font-bold">PARTNERSHIPS</p>
             <article className="md:w-1/2">
               <h2 className="text-[2.3rem] md:block hidden">

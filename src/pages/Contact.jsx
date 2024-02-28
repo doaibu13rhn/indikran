@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import getImageUrl from "../utils/imageGetter";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import { HashLink } from "react-router-hash-link";
 
 function Contact() {
   return (
@@ -97,6 +98,25 @@ function Contact() {
                 className="textarea mt-5 border-black textarea-bordered textarea-sm w-full max-w-xs md:max-w-2xl leading-10"
               ></textarea>
             </div>
+          </div>
+        </div>
+
+        <div
+          className="bg-[url('/src/assets/images/maps.webp')] bg-cover bg-center bg-no-repeat hidden md:block w-full h-[70vh]"
+          id="maps"
+        >
+          <div className="flex mx-20 justify-end items-end h-[90%]">
+            <HashLink
+              className="flex items-center"
+              to="https://maps.app.goo.gl/xpmG5HGQcj3GYMW5A"
+            >
+              <p className="text-black underline">Open in Maps</p>
+              <img
+                src={getImageUrl("arrow", "webp")}
+                alt="arrow"
+                className="w-7 h-7 ms-3"
+              />
+            </HashLink>
           </div>
         </div>
       </section>
