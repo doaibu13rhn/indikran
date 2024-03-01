@@ -1,13 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import getImageUrl from "../utils/imageGetter";
-import Header from "../components/Header";
+// import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Partnerships from "../components/Partnerships";
+import Navbar from "../components/Navbar";
 
 function About() {
   return (
     <>
-      <Header />
+      <Navbar />
       <main>
         <section className="bg-white bg-cover bg-center bg-no bg-repeat w-full">
           <div className="md:mx-20 mx-8 md:min-h-[50vh] min-h-[35vh] items-end flex">
@@ -298,7 +300,7 @@ function About() {
 
         <section className="bg-white">
           <div className="md:mx-20 mx-8">
-            <div className="md:flex mt-14">
+            <div className="md:flex pt-14">
               <div className="md:w-1/2"></div>
               <div className="md:w-1/2">
                 <article className="md:flex">
@@ -452,40 +454,7 @@ function About() {
           </div>
         </section>
 
-        <div className="md:mx-20 mx-8 bg-white">
-          <div className="md:flex md:pt-[10rem] pt-16">
-            <p className="text-second w-1/2 font-bold">PARTNERSHIPS</p>
-            <article className="md:w-1/2">
-              <h2 className="text-[2.3rem] md:block hidden">
-                We've formed <b className="text-prime">Valuable</b>
-              </h2>
-              <h2 className="text-lg md:hidden block mt-10">
-                We've formed{" "}
-                <b className="text-prime">
-                  valuable partnerships and collaborations
-                </b>{" "}
-                with a diverse range of businesses
-              </h2>
-            </article>
-          </div>
-          <h2 className="text-[2.7rem] md:block hidden">
-            <b className="text-prime">partnerships and collaborations</b> with
-            diverse range of businesses
-          </h2>
-        </div>
-
-        <div className="w-full md:py-20 py-14 bg-white">
-          <img
-            src={getImageUrl("partnerships", "webp")}
-            alt="partnerships"
-            className="md:block hidden"
-          />
-          <img
-            src={getImageUrl("partnerships-mob", "webp")}
-            alt="partnerships"
-            className="md:hidden block"
-          />
-        </div>
+        <Partnerships />
       </main>
       <Footer />
     </>

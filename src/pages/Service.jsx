@@ -1,13 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import getImageUrl from "../utils/imageGetter";
-import Header from "../components/Header";
+// import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 
 function Service() {
   return (
     <>
-      <Header />
+      <Navbar />
       <main className="">
         <section className="bg-shade bg-cover bg-center bg-no bg-repeat w-full">
           <div className="text-white md:mx-20 mx-8 min-h-[50vh] items-end flex">

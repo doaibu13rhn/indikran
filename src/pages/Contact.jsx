@@ -1,14 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import getImageUrl from "../utils/imageGetter";
-import Header from "../components/Header";
+// import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { HashLink } from "react-router-hash-link";
+import Navbar from "../components/Navbar";
 
 function Contact() {
   return (
     <>
-      <Header />
+      <Navbar />
       <section className="bg-white">
         <div className="mx-8 md:mx-20">
           <div className="flex items-end min-h-[35vh]">

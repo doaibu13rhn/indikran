@@ -1,14 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import getImageUrl from "../utils/imageGetter";
-import Header from "../components/Header";
+// import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 import { HashLink } from "react-router-hash-link";
+import Partnerships from "../components/Partnerships";
 
 function Home() {
   return (
     <>
-      <Header />
+      <Navbar />
       <main>
         <section className="bg-[url('/src/assets/images/main-section-mobile.webp')] md:bg-[url('/src/assets/images/main-section.webp')] bg-cover bg-center bg-no-repeat w-full">
           <div className="flex mx-8 md:mx-20 min-h-[100vh] text-white items-end">
@@ -291,43 +293,9 @@ function Home() {
                 </Link>
               </article>
             </div>
-
-            <div className="md:flex md:mt-[10rem] mt-[14rem] w-full">
-              <p className="text-second md:w-1/2 font-bold">PARTNERSHIPS</p>
-              <article className="w-1/2 hidden md:block">
-                <h2 className="text-[2.3rem]">
-                  We've formed <b className="text-prime">Valuable</b>
-                </h2>
-              </article>
-              {/* Mobile */}
-              <p className="text-[1.18rem] block md:hidden mt-14 font-light">
-                We've formed{" "}
-                <b className="text-prime font-bold">
-                  valuable partnerships and collaborations
-                </b>{" "}
-                with a diverse range of businesses
-              </p>
-            </div>
-            {/* Dekstop */}
-            <h2 className="text-[2.7rem] md:block hidden">
-              <b className="text-prime">partnerships and collaborations</b> with
-              diverse range of businesses
-            </h2>
           </div>
         </section>
-
-        <div className="w-full md:py-20 py-14 bg-white">
-          <img
-            src={getImageUrl("partnerships", "webp")}
-            alt="partnerships"
-            className="md:block hidden"
-          />
-          <img
-            src={getImageUrl("partnerships-mob", "webp")}
-            alt="partnerships"
-            className="md:hidden block"
-          />
-        </div>
+        <Partnerships />
       </main>
       <Footer />
     </>
