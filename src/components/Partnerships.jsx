@@ -5,7 +5,7 @@ function Partnerships() {
   return (
     <>
       <div className="bg-white">
-        <div className="md:flex md:mt-[10rem] mt-[10rem] mx-8 md:mx-20">
+        <div className="md:flex md:mt-[10rem] pt-[10rem] mx-8 md:mx-20">
           <p className="text-second md:w-1/2 font-bold">PARTNERSHIPS</p>
           <article className="w-1/2 hidden md:block">
             <h2 className="text-[2.3rem]">
