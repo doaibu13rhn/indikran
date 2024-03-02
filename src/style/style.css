@@ -10,3 +10,23 @@ section {
     height: auto;
     min-height: 100vh;
 }
+
+/* YourStyles.css or in-line styles */
+.animated-images-container {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .animated-image {
+    animation: moveRightToLeft 10s linear infinite;
+  }
+  
+  @keyframes moveRightToLeft {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  

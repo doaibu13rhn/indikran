@@ -27,12 +27,57 @@ function Partnerships() {
           diverse range of businesses
         </h2>
 
-        <div className="w-full md:py-14 py-10">
-          <img
-            src={getImageUrl("new-partner", "webp")}
-            alt="partnerships"
-            className="md:block hidden"
-          />
+        <div className="w-full md:py-14 py-10 flex overflow-hidden justify-between animated-images-container">
+          <div className="md:flex hidden">
+            <img
+              src={getImageUrl("partner-1", "webp")}
+              alt="partnerships"
+              className="animated-image max-w-full h-[50px]"
+            />
+          </div>
+          <div className="md:flex hidden">
+            <img
+              src={getImageUrl("partner-2", "webp")}
+              alt="partnerships"
+              className="animated-image max-w-full h-[50px]"
+            />
+          </div>
+          <div className="md:flex hidden">
+            <img
+              src={getImageUrl("partner-3", "webp")}
+              alt="partnerships"
+              className="animated-image max-w-full h-[50px]"
+            />
+          </div>
+          <div className="md:flex hidden">
+            <img
+              src={getImageUrl("partner-4", "webp")}
+              alt="partnerships"
+              className="animated-image max-w-full h-[50px]"
+            />
+          </div>
+          <div className="md:flex hidden">
+            <img
+              src={getImageUrl("partner-5", "webp")}
+              alt="partnerships"
+              className="animated-image w-24 h-[50px]"
+            />
+          </div>
+          <div className="md:flex hidden">
+            <img
+              src={getImageUrl("partner-6", "webp")}
+              alt="partnerships"
+              className="animated-image max-w-full h-[50px]"
+            />
+          </div>
+          <div className="md:flex hidden">
+            <img
+              src={getImageUrl("partner-7", "webp")}
+              alt="partnerships"
+              className="animated-image max-w-full h-[50px]"
+            />
+          </div>
+
           <img
             src={getImageUrl("partnerships-mob", "webp")}
             alt="partnerships"

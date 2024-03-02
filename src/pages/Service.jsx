@@ -9,7 +9,7 @@ function Service() {
   return (
     <>
       <Navbar />
-      <main className="">
+      <main>
         <section className="bg-shade bg-cover bg-center bg-no bg-repeat w-full">
           <div className="text-white md:mx-20 mx-8 min-h-[50vh] items-end flex">
             <div className="flex pb-10">
@@ -37,7 +37,7 @@ function Service() {
 
         <section className="bg-white">
           <div className="md:mx-20 mx-8 h-auto min-h-screen">
-            <div className="md:flex mt-20">
+            <div className="md:flex pt-20">
               <p className="text-second md:w-1/2 font-bold">SERVICES</p>
               <article className="md:flex md:w-1/2">
                 {/* Mobile */}
