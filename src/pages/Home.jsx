@@ -94,25 +94,29 @@ function Home() {
               <div className="carousel-item">
                 <img
                   src={getImageUrl("refurbishment-mob", "webp")}
-                  className=""
+                  alt="slider-service"
+                  className="w-full"
                 />
               </div>
               <div className="carousel-item">
                 <img
                   src={getImageUrl("refurbishment-mob", "webp")}
-                  className=""
+                  alt="slider-service"
+                  className="w-full"
                 />
               </div>
               <div className="carousel-item">
                 <img
                   src={getImageUrl("refurbishment-mob", "webp")}
-                  className=""
+                  alt="slider-service"
+                  className="w-full"
                 />
               </div>
               <div className="carousel-item">
                 <img
                   src={getImageUrl("refurbishment-mob", "webp")}
-                  className=""
+                  alt="slider-service"
+                  className="w-full"
                 />
               </div>
             </div>
@@ -197,12 +201,12 @@ function Home() {
           <img
             src={getImageUrl("home-section-3", "webp")}
             alt="indikran-workshop"
-            className="hidden md:block"
+            className="hidden md:block w-full"
           />
           <img
             src={getImageUrl("home-section-3-mob", "webp")}
             alt="indikran-workshop"
-            className="block md:hidden"
+            className="block md:hidden w-full"
           />
         </div>
 

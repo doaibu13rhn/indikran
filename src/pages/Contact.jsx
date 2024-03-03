@@ -103,10 +103,10 @@ function Contact() {
         </div>
 
         <div
-          className="bg-[url('/src/assets/images/maps.webp')] bg-cover bg-center bg-no-repeat hidden md:block w-full h-[70vh]"
+          className="bg-[url('/src/assets/images/maps.webp')] bg-cover bg-center bg-no-repeat w-full h-[70vh]"
           id="maps"
         >
-          <div className="flex mx-20 justify-end items-end h-[90%]">
+          <div className="flex md:mx-20 mx-8 justify-end items-end h-[90%]">
             <HashLink
               className="flex items-center"
               to="https://maps.app.goo.gl/xpmG5HGQcj3GYMW5A"
