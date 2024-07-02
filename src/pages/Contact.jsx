@@ -5,6 +5,7 @@ import getImageUrl from "../utils/imageGetter";
 import Footer from "../components/Footer";
 import { HashLink } from "react-router-hash-link";
 import Navbar from "../components/Navbar";
+import Header from "../components/Header";
 
 function Contact() {
   return (

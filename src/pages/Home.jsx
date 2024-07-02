@@ -135,8 +135,8 @@ function Home() {
             </HashLink>
 
             {/* Dekstop */}
-            <div className="md:flex text-white mt-14 gap-5 hidden">
-              <div className="w-1/2"></div>
+            <div className="md:block text-white mt-14 hidden">
+              {/* <div className="w-1/2"></div>
               <div className="w-1/2">
                 <div className="flex w-full gap-5">
                   <div className="w-1/2">
@@ -158,10 +158,100 @@ function Home() {
                     </Link>
                   </div>
                 </div>
+              </div> */}
+              <div className="flex w-full items-center justify-between">
+                <p>We offer a comprehensive range of services for</p>
+                <HashLink
+                  className="flex text-white items-center font-extralight"
+                  smooth
+                  to="/en/about"
+                >
+                  <p className="underline">Learn More</p>
+                  <img
+                    src={getImageUrl("arrow", "webp")}
+                    alt="arrow"
+                    className="w-8 h-8 ms-2"
+                  />
+                </HashLink>
+              </div>
+
+              <div className="w-full md:flex gap-3 mt-6">
+                <div className="w-[25%] ">
+                  <Link to="/en/service#refurbishment" className="">
+                    <img
+                      src={getImageUrl("new-refurbishment", "webp")}
+                      alt="refurbishment"
+                      className=""
+                    />
+                    <p className="text-second mt-5">Refurbishment</p>
+                    <div className="flex items-center py-5">
+                      <p className="underline">Learn More</p>
+                      <img
+                        src={getImageUrl("arrow", "webp")}
+                        alt="arrow"
+                        className="w-8 h-8 ms-4"
+                      />
+                    </div>
+                  </Link>
+                </div>
+                <div className="w-[25%]">
+                  <Link to="/en/service" className="">
+                    <img
+                      src={getImageUrl("new-manpower", "webp")}
+                      alt="Manpower"
+                      className=""
+                    />
+                    <p className="text-second mt-5">Manpower</p>
+                    <div className="flex items-center py-5">
+                      <p className="underline">Learn More</p>
+                      <img
+                        src={getImageUrl("arrow", "webp")}
+                        alt="arrow"
+                        className="w-8 h-8 ms-4"
+                      />
+                    </div>
+                  </Link>
+                </div>
+                <div className="w-[25%]">
+                  <Link to="/en/service" className="">
+                    <img
+                      src={getImageUrl("new-supply", "webp")}
+                      alt="Supply"
+                      className=""
+                    />
+                    <p className="text-second mt-5">Supply</p>
+                    <div className="flex items-center py-5">
+                      <p className="underline">Learn More</p>
+                      <img
+                        src={getImageUrl("arrow", "webp")}
+                        alt="arrow"
+                        className="w-8 h-8 ms-4"
+                      />
+                    </div>
+                  </Link>
+                </div>
+                <div className="w-[25%]">
+                  <Link to="/en/service#refurbishment" className="">
+                    <img
+                      src={getImageUrl("new-testing", "webp")}
+                      alt="Testing"
+                      className=""
+                    />
+                    <p className="text-second mt-5">Testing</p>
+                    <div className="flex items-center py-5">
+                      <p className="underline">Learn More</p>
+                      <img
+                        src={getImageUrl("arrow", "webp")}
+                        alt="arrow"
+                        className="w-8 h-8 ms-4"
+                      />
+                    </div>
+                  </Link>
+                </div>
               </div>
             </div>
 
-            <div className="hidden md:flex gap-5">
+            {/* <div className="hidden md:flex gap-5">
               <div className="w-1/2">
                 <div className="flex w-full gap-5">
                   <div className="w-1/2 text-white"></div>
@@ -193,7 +283,7 @@ function Home() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
 

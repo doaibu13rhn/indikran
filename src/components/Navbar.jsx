@@ -44,7 +44,7 @@ const Navbar = () => {
       }`}
     >
       <nav
-        className={`text-white md:flex flex justify-between items-center md:justify-between md:items-center pt-7 md:pt-7 mx-8 md:mx-20 ${
+        className={`text-white md:flex flex justify-between items-center md:justify-between md:items-center pt-7 md:py-4 mx-8 md:mx-20 ${
           isAboutOrContactPage ? "text-black" : ""
         }`}
       >
