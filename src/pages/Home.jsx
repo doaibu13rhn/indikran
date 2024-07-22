@@ -3,14 +3,15 @@ import { Link } from "react-router-dom";
 import getImageUrl from "../utils/imageGetter";
 // import Header from "../components/Header";
 import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
+// import Navbar from "../components/Navbar";
 import { HashLink } from "react-router-hash-link";
 import Partnerships from "../components/Partnerships";
+import Header from "../components/Header";
 
 function Home() {
   return (
     <>
-      <Navbar />
+      <Header />
       <main>
         <section className="bg-[url('/src/assets/images/main-section-mobile.webp')] md:bg-[url('/src/assets/images/main-section.webp')] bg-cover bg-center bg-no-repeat w-full">
           <div className="flex mx-8 md:mx-20 min-h-[100vh] text-white items-end">
